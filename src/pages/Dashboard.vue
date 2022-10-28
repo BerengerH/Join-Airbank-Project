@@ -1,15 +1,18 @@
 <script>
+import SearchBar from "../components/SearchBar.vue";
 
 export default {
   name: "Dashboard",
   components: {
-},
+    SearchBar,
+  },
 };
 </script>
 
 <template>
   <main>
-  <h1>dashboard test</h1>
+    <div>
+      <SearchBar/>
+    </div>
   </main>
-
 </template>
