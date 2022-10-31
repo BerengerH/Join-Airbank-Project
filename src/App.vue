@@ -12,7 +12,7 @@ export default {
 
 <template>
 <Header/>
-<main>
+<main class="mb-24">
   <RouterView />
 </main>
 <Footer/>
