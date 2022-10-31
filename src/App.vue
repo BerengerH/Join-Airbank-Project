@@ -1,5 +1,4 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 
@@ -13,9 +12,9 @@ export default {
 
 <template>
 <Header/>
-<section>
+<main>
   <RouterView />
-</section>
+</main>
 <Footer/>
 </template>
 

@@ -1,6 +1,18 @@
 <script>
+import { useTransactionsStore } from "../stores/transactions";
+
 export default {
   name: "TransactionsTable",
+
+  setup() {
+    const transactionsStore = useTransactionsStore();
+    const transactions = transactionsStore.transactions;
+
+    return {
+      transactionsStore,
+      transactions,
+    };
+  },
 };
 </script>
 
@@ -17,14 +29,16 @@ export default {
         </tr>
       </thead>
       <tbody>
-            <!-- Later one, check the best option between adding endless scrolling or pagination -->
+        <!-- Later one, check the best option between adding endless scrolling or pagination -->
         <tr
+          v-for="transaction in this.transactions"
+          :key="transaction.id"
           class="border-b border-slate-300 hover:bg-black hover:text-white hover:cursor-pointer"
         >
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
-          <td>test</td>
+          <td>{{transaction.reference}}</td>
+          <td>{{transaction.category}}</td>
+          <td>{{transaction.date}}</td>
+          <td>{{transaction.amount}} {{transaction.currency}}</td>
         </tr>
       </tbody>
     </table>

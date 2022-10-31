@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <main class="m-[5%]">
+  <section class="m-[5%]">
     <form class="my-5 flex gap-4 justify-between">
       <SearchBar />
       <BankFilter />
@@ -29,5 +29,5 @@ export default {
       <EndDateFilter />
     </form>
     <TransactionsTable />
-  </main>
+  </section>
 </template>
