@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <footer class="fixed bottom-0 w-full bg-black text-center">
+  <footer class="sticky bottom-0 w-full bg-black text-center">
     <div class="text-white text-center text-sm sm:p-7 p-4">
       JoinAirbank© 2022 Copyright:
       <a

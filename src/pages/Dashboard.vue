@@ -21,7 +21,7 @@ export default {
 
 <template>
   <section class="m-[5%]">
-    <form class="my-5 flex gap-4 justify-between">
+    <form class="my-5 flex flex-wrap gap-4 justify-between">
       <SearchBar />
       <BankFilter />
       <CategoryFilter />
